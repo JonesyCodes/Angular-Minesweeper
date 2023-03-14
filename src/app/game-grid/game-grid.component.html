@@ -1,0 +1,7 @@
+<div class="gridComponent">
+  <div id="gridDiv">
+    <div id="minefield" class="grid" [ngStyle]="{'grid-template-columns': setColumns}" [ngClass]="{'disabled': gameOver}">
+      <app-grid-squares *ngFor="let s of squares; let idx=index" [data]="s" (squareClickedEvent)="squareClicked(idx)" (squareRightClickedEvent)="squareRightClicked(idx)"></app-grid-squares>
+    </div>
+  </div>
+</div>

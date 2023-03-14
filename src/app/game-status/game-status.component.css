@@ -1,0 +1,25 @@
+#resetGame {
+  display: flex;
+  align-self: flex-end;
+}
+
+#controlsDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#resetDiv {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+
+#gridDiv {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#gameStats {
+  text-align: center;
+}

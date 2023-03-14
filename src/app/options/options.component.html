@@ -1,0 +1,31 @@
+
+<div id="gameOptionsForm">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md col-xl-12">
+        <div class="input-group">
+          <label class="input-group-text" for="columnCount">Columns</label>
+          <input #columnAmount class="form-control" id="columnCount" type="number" required value="{{data.columnCount}}" min="1" (change)="columnInputChange($any($event))" />
+        </div>
+      </div>
+      <div class="col-12 col-md col-xl-12">
+        <div class="input-group">
+          <label class="input-group-text" for="rowCount">Rows</label>
+          <input #rowAmount class="form-control" id="rowCount" type="number" required value="{{data.rowCount}}" min="1" (change)="rowInputChange($any($event))" />
+        </div>
+      </div>
+      <div class="col-12 col-md col-xl-12">
+        <div class="input-group w-100">
+          <label class="input-group-text" for="mineCount">Mines</label>
+          <input #mineAmount class="form-control" id="mineCount" type="number" required value="{{data.mineCount}}" min="1" (change)="mineInputChange($any($event))" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="applyOptions" class="btn btn-primary mt-auto" (click)="optionsChanged()">Apply&nbsp;<i class="bi bi-check2"></i></button>
+
+</div>
+
+

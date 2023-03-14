@@ -1,0 +1,23 @@
+
+<div id="controlsDiv" class="container">
+
+  <div class="row">
+    <div class="col-12 col-sm-8 form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="toggleSwitch" (change)="toggleActive()" />
+      <label class="form-check-label text-left" for="flexSwitchCheckDefault">Flag on default click</label>
+    </div>
+    <div id="resetDiv" class="col-12 col-sm-4">
+      <button id="resetGame" class="btn btn-secondary" (click)="newGame()">Reset&nbsp;<i class="bi bi-recycle"></i></button>
+    </div>
+  </div>
+</div>
+
+<div id="gameStats">
+  <label>{{flagCount}} <i class="bi bi-flag-fill"></i></label>&nbsp;
+  <label>{{mineCount}} <i class="bi bi-exclamation-triangle-fill"></i></label>&nbsp;
+  <cd-timer #gameTimer></cd-timer>
+</div>
+
+<div>
+  <ng-template #placeholder id="gameGrid"></ng-template>
+</div>
