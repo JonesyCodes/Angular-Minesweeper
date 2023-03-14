@@ -13,7 +13,8 @@ export class GridSquaresComponent {
   @Output() squareClickedEvent: EventEmitter<void> = new EventEmitter();
   @Output() squareRightClickedEvent: EventEmitter<void> = new EventEmitter();
 
-  value: string = "Mine?";
+  value: string = "";
+  content: string = "";
 
   ngOnInit() {
     this.displayValue();
@@ -35,7 +36,7 @@ export class GridSquaresComponent {
     }
     else if (this.data.mine)
     {
-      this.value = '';
+      this.content = 'mine_type1.png';
     }
     else
     {

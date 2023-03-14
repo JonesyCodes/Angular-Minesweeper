@@ -12,12 +12,16 @@
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+img {
+  max-width: 100%;
+}
+
 .gridSquare:hover {
   border: 2px dashed rgba(255, 102, 0, 1);
 }
 
 .hidden {
-  background-image: url(src\assets\grass2.jpg);
+  background-image: url(src\assets\adobe_licensed\grass.jpeg);
   background-size: contain;
 }
 
@@ -26,12 +30,13 @@
 }
 
 .detonated {
-  background-image: url(src\assets\landmine2.jfif);
-  background-size: contain;
+  /* content: url(src\assets\adobe_licensed\mine_type1.png); */
+  /* background-image: url(src\assets\landmine2.jfif); */
+  /* background-size: contain; */
 }
 
 .flagged {
-  background-image: url(src\assets\grass2.jpg);
+  background-image: url(src\assets\adobe_licensed\grass.jpeg);
   background-size: contain;
   cursor:default;
   color: rgba(255, 69, 255, 1);

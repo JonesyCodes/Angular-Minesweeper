@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  background-image: url(src\assets\dirt2.jfif);
+  background-image: url(src\assets\adobe_licensed\dirt.jpeg);
   background-size: contain;
   border: 4px ridge rgba(114, 132, 150, 1);
   border-radius: 5px;
