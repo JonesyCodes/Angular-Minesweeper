@@ -38,5 +38,16 @@
   margin: 1vw 0 1vw 0;
 }
 
+.btn {
+  border-color: rgba(61, 242, 191, 1);
+  background-color: rgba(61, 242, 191, 1);
+  color: rgba(15, 63, 69, 1);
+}
+
+.btn:hover {
+  border-color: rgba(28, 200, 151, 1);
+  background-color: rgba(28, 200, 151, 1);
+}
+
 
 
