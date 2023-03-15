@@ -15,6 +15,7 @@ export class GridSquaresComponent {
 
   value: string = "";
   content: string = "";
+  minePath = 'assets\\Adobe_licensed\\mine_type1.png'
 
   ngOnInit() {
     this.displayValue();
@@ -36,7 +37,7 @@ export class GridSquaresComponent {
     }
     else if (this.data.mine)
     {
-      this.content = 'mine_type1.png';
+      this.content = this.minePath;
     }
     else
     {

@@ -21,7 +21,7 @@ img {
 }
 
 .hidden {
-  background-image: url(src\assets\adobe_licensed\grass.jpeg);
+  background-image: url(src\assets\Adobe_licensed\Grass.jpeg);
   background-size: contain;
 }
 
@@ -36,7 +36,7 @@ img {
 }
 
 .flagged {
-  background-image: url(src\assets\adobe_licensed\grass.jpeg);
+  background-image: url(src\assets\Adobe_licensed\Grass.jpeg);
   background-size: contain;
   cursor:default;
   color: rgba(255, 69, 255, 1);

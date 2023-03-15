@@ -29,6 +29,7 @@ export class GameStatusComponent {
   ngOnInit() {
     const inputData: GameGridData = { mines: this.mineCount, columns: this.columnCount, rows: this.rowCount, flagOnClick: false };
     this.gridData = inputData;
+    this.gameMessage.emit('On PC you can right click to plant flags')
     this.newGame();
     this.gameTimer.format = "ms";
   }
