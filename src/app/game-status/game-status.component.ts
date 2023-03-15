@@ -79,13 +79,8 @@ export class GameStatusComponent {
     }
   }
 
-  //// toggle for flag on  left click ##update to check toggle rather than current value
+  //// toggle for flag on  left click
   toggleActive() {
-    if (this.gridData.flagOnClick) {
-      this.gridData.flagOnClick = false;
-    }
-    else {
-      this.gridData.flagOnClick = true;
-    }
+    this.gridData.flagOnClick = !this.gridData.flagOnClick;
   }
 }

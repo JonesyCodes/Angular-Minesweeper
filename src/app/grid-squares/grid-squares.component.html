@@ -1,4 +1,5 @@
 <button class="gridSquare"
+        title="gridSquareButton"
         [ngClass]="{'hidden': data.state === 'hidden', 'revealed': data.state === 'revealed', 'flagged': data.state === 'flagged', 'detonated': data.mine === true && data.state === 'revealed'}"
         (click)="squareClicked()"
         (contextmenu)="squareRightClicked($event)"
