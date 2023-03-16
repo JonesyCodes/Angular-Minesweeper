@@ -23,3 +23,12 @@
 #gameStats {
   text-align: center;
 }
+
+
+
+.dialog{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  }

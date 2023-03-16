@@ -10,6 +10,10 @@ import { GridSquaresComponent } from './grid-squares/grid-squares.component';
 import { GameStatusComponent } from './game-status/game-status.component';
 import { CdTimerModule } from 'angular-cd-timer';
 import { FormsModule } from '@angular/forms';
+import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,15 +22,19 @@ import { FormsModule } from '@angular/forms';
     GameComponent,
     GameGridComponent,
     GridSquaresComponent,
-    GameStatusComponent
+    GameStatusComponent,
+    ModalDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CdTimerModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ModalDialogComponent]
 })
 export class AppModule { }

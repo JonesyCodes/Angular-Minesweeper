@@ -1,0 +1,18 @@
+
+#modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(84, 194, 219);
+}
+
+.btn {
+    background-color: rgba(15, 63, 69, 1);
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(15, 63, 69, 1);
+}
+
+.btn:hover {
+    background-color: rgb(23, 97, 107);
+    border-color: rgb(23, 97, 107);
+}

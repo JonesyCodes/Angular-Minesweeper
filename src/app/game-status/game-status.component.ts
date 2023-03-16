@@ -2,6 +2,9 @@ import { Component, ViewContainerRef, ViewChild, ComponentFactoryResolver, Injec
 import { GameGridComponent } from '../game-grid/game-grid.component';
 import { CdTimerComponent } from 'angular-cd-timer';
 import { GameGridData } from '../game-grid-data';
+import { MatDialog, MatDialogConfig, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-game-status',
@@ -24,7 +27,21 @@ export class GameStatusComponent {
 
   @ViewChild('placeholder', { read: ViewContainerRef, static: true })
   public placeholder!: ViewContainerRef;
-  constructor(private resolver: ComponentFactoryResolver, private injector: Injector) { }
+
+  constructor(private resolver: ComponentFactoryResolver, private injector: Injector, private dialog: MatDialog) { }
+
+// Dialog start
+  
+      showDialog(win: boolean){
+        const dialogRef = this.dialog.open(ModalDialogComponent, {
+          disableClose: true,
+          data: {
+            win: win
+          }
+        });
+      }
+
+  // Dialog end
 
   ngOnInit() {
     const inputData: GameGridData = { mines: this.mineCount, columns: this.columnCount, rows: this.rowCount, flagOnClick: false };
@@ -63,9 +80,11 @@ export class GameStatusComponent {
 
     if (win) {      
       this.gameMessage.emit(`Congrats, you're basically Jeremy Renner! Completed in: ${this.gameTimer.get().minutes}min ${this.gameTimer.get().seconds }s`);
+      this.showDialog(win);
     }
     else {
       this.gameMessage.emit(`Go watch The Hurt Locker to survive longer than: ${this.gameTimer.get().minutes}min ${this.gameTimer.get().seconds }s`);
+      this.showDialog(win);
     }
   }
 
