@@ -1,5 +1,5 @@
 html {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -9,8 +9,9 @@ body {
   align-items: center;
   padding: 5vh 10vw 5vh 10vw;
   color: rgb(242, 242, 242);
-  background-image: url(src\assets\adobe_licensed\Seamines.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-image: url(src\assets\adobe_licensed\Seamines.jpeg);
+  overflow-y: scroll;
 }
