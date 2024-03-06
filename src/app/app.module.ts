@@ -35,6 +35,5 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ModalDialogComponent]
 })
 export class AppModule { }
